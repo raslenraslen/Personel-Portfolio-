@@ -1,0 +1,57 @@
+@keyframes zoomInFade {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .support-company-logo img {
+    animation: zoomInFade 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .support-company-logo.animation-order-1 img {
+    animation-delay: 0.1s;
+  }
+  .support-company-logo.animation-order-2 img {
+    animation-delay: 0.2s;
+  }
+  .support-company-logo.animation-order-3 img {
+    animation-delay: 0.3s;
+  }
+  .support-company-logo.animation-order-4 img {
+    animation-delay: 0.4s;
+  }
+  .support-company-logo.animation-order-5 img {
+    animation-delay: 0.5s;
+  }
+  .support-company-logo.animation-order-6 img {
+    animation-delay: 0.6s;
+  }
+  .support-company-logo.animation-order-7 img {
+    animation-delay: 0.7s;
+  }
+  .support-company-logo.animation-order-8 img {
+    animation-delay: 0.8s;
+  }
+  
+
+
+  .support-company-logo img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .support-company-logo img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .support-company-logo img:hover {
+    transform: scale(1.1) rotate(3deg);
+  }
+  
