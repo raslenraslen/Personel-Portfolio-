@@ -22,31 +22,55 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets" , 
+              "src/images"
             ],
             "styles": [
-              "src/app/assets/css/vendor/fontawesome.css",
-              "src/app/assets/css/plugins/swiper.css",
-              "src/app/assets/css/plugins/odometer.css",
-              "src/app/assets/css/vendor/animate.min.css",
-              "src/app/assets/css/vendor/bootstrap.min.css",
-              "src/app/assets/css/style.css"
+              "src/assets/css/vendor/fontawesome.css",
+              "src/assets/css/plugins/swiper.css",
+              "src/assets/css/plugins/odometer.css",
+              "src/assets/css/vendor/animate.min.css",
+              "src/assets/css/vendor/bootstrap.min.css",
+              "src/assets/css/style.css"
   
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/vendor/jquery.js", 
+              "src/assets/js/vendor/waw.js", 
+              "src/assets/js/plugins/swiper.js",
+              "src/assets/js/vendor/bootstrap.min.js", 
+              "src/assets/js/vendor/jquery-ui.min.js", 
+              "src/assets/js/vendor/jquery-one-page-nav.js", 
+              "src/assets/js/vendor/appear.js",
+              "src/assets/js/vendor/backtop.js",
+              "src/assets/js/vendor/particle.js",
+              "src/assets/js/vendor/waypoints.min.js",
+              "src/assets/js/plugins/animation.js",
+              "src/assets/js/plugins/contact.form.js",
+              "src/assets/js/plugins/gsap.js", 
+              "src/assets/js/plugins/splittext.js", 
+              "src/assets/js/plugins/isotop.js",
+              "src/assets/js/plugins/odometer.js",
+              "src/assets/js/plugins/scrolltigger.js", 
+              "src/assets/js/plugins/scrolltoplugins.js",
+              "src/assets/js/plugins/smoothscroll.js",
+              "src/assets/js/plugins/text-type.js", 
+              "src/assets/js/main.js"
+              
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1500kb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "2000kb",
+                  "maximumError": "400kb"
                 }
               ],
               "outputHashing": "all"
