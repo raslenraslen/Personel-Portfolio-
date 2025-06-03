@@ -12,10 +12,10 @@
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                 <polyline points="9 22 9 12 15 12 15 22"></polyline>
                             </svg> Home</a></li>
-                    <li class="nav-item"><a class="nav-link smoth-animation" href="#features"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+                    <li class="nav-item"><a class="nav-link smoth-animation" routerLink="/aboutme"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
                                 <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                                 <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>Features</a></li>
+                            </svg>About Me</a></li>
                     <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers">
                                 <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
                                 <polyline points="2 17 12 22 22 17"></polyline>
@@ -222,15 +222,15 @@
                     <div class="latest-portfolio-card tmp-hover-link   animation-order-1">
                         <div >
                             <div class="img-box v2" >
-                                <a class="tmp-scroll-trigger tmp-zoom-in animation-order-4" href="project-details.html">
+                                <a routerLink="/detailsgamemax" class="tmp-scroll-trigger tmp-zoom-in animation-order-4" >
                                     <img  src="images/gamemax.PNG"  alt="Thumbnail" >
                                 </a>
                                 <div class="portfolio-card-content-wrap">
                                     <div class="content-left">
-                                        <h3 class="portfolio-card-title"><a class="link" href="project-details.html">Gamemax : Cloud Gaming Platform </a></h3>
+                                        <h3 class="portfolio-card-title"><a routerLink="/detailsgamemax">Gamemax : Cloud Gaming Platform </a></h3>
                                         <p class="portfoli-card-para">mars 2025 - mai 2025</p>
                                     </div>
-                                    <a href="project-details.html" class="tmp-arrow-icon-btn">
+                                    <a routerLink="/detailsgamemax" class="tmp-arrow-icon-btn">
                                         <div class="btn-inner">
                                             <i class="tmp-icon fa-solid fa-arrow-up-right"></i>
                                             <i class="tmp-icon-bottom fa-solid fa-arrow-up-right"></i>
@@ -384,7 +384,7 @@
                             </div>
                             <div class="experience-content tmp-scroll-trigger tmp-fade-in animation-order-2">
                                 <p class="ex-subtitle">experience</p>
-                                <h2 class="ex-name">MyWeb Internship (3 Months ) </h2>
+                                <h2 class="ex-name">MyWeb Internship (3 Months) </h2>
                                 <h3 class="ex-title">DevOps Engineer </h3>
                                 <p class="ex-para"> During my internship at MyWeb, I contributed to automating deployment pipelines, managing cloud infrastructure, and ensuring CI/CD workflows. I worked with tools such as Docker, Jenkins CI/CD, and OpenStack, gaining hands-on experience in DevOps best practices.</p>
                             </div>
@@ -649,7 +649,7 @@
                             <h5 class="ft-title">Quick Link</h5>
                             <ul class="ft-link tmp-link-animation">
                                 <li>
-                                    <a href="about.html">About Me</a>
+                                    <a routerLink="/aboutme">About Me</a>
                                 </li>
                                 <li>
                                     <a href="service.html">Service</a>
