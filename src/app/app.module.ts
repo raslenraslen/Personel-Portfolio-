@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DetailsgamemaxComponent } from './detailsgamemax/detailsgamemax.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
+import { InfrastucuredetailsComponent } from './infrastucuredetails/infrastucuredetails.component';
 
 
 
@@ -19,6 +20,7 @@ import { ContactComponent } from './contact/contact.component';
     DetailsgamemaxComponent,
     AboutmeComponent,
     ContactComponent,
+    InfrastucuredetailsComponent,
   
     
   ],
