@@ -10,6 +10,7 @@ import { ServiceComponent } from './service/service.component';
 import { K8sdetailsComponent } from './k8sdetails/k8sdetails.component';
 import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
 import { PipelinedetailsComponent } from './pipelinedetails/pipelinedetails.component';
+import { BlooddetailsComponent } from './blooddetails/blooddetails.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'projects' , component:ProjectsComponent} ,
   {path: 'k8sdetails' , component:K8sdetailsComponent} ,
   {path: 'employeedetails' , component:EmployeedetailsComponent} ,
+  {path: 'blooddetails' , component:BlooddetailsComponent} ,
   {path: 'pipelinedetails' , component:PipelinedetailsComponent} ,
   {path: 'service' , component:ServiceComponent} ,
  

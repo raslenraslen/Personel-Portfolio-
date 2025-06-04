@@ -14,6 +14,7 @@ import { SidemenuComponent } from './sidemenu/sidemenu.component';
 import { K8sdetailsComponent } from './k8sdetails/k8sdetails.component';
 import { PipelinedetailsComponent } from './pipelinedetails/pipelinedetails.component';
 import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
+import { BlooddetailsComponent } from './blooddetails/blooddetails.component';
 
 
 
@@ -33,6 +34,7 @@ import { EmployeedetailsComponent } from './employeedetails/employeedetails.comp
     K8sdetailsComponent,
     PipelinedetailsComponent,
     EmployeedetailsComponent,
+    BlooddetailsComponent,
   
     
   ],

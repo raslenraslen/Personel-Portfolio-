@@ -1,0 +1,170 @@
+/* Define your primary pink color here */
+:root {
+    --primary-pink-color: #ff0057; 
+    /* Define other theme variables if needed */
+    /* --tmp-section-gap: 120px; /* Exemple de variable d'espacement si non définie globalement */
+}
+
+/* ----------------------------------- */
+/* --------- Filter Styles --------- */
+/* ----------------------------------- */
+
+.tmp-filter-area {
+    padding-top: 20px; /* Ajuste l'espacement si nécessaire */
+    padding-bottom: 20px;
+    /* background-color: #f9f9f9; */ /* Optionnel: un léger fond pour la section de filtre */
+    /* border-bottom: 1px solid #eee; */ /* Optionnel: une ligne de séparation */
+}
+
+.filter-buttons {
+    display: flex; /* ✅ ALIGNEMENT HORIZONTAL */
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 15px; 
+    flex-wrap: wrap; /* Permet aux boutons de passer à la ligne sur petits écrans */
+    margin-bottom: 30px; /* Espacement entre les boutons et les projets */
+    padding: 0 10px; /* Ajoute un peu d'espacement sur les côtés si nécessaire */
+}
+
+.filter-button {
+    background-color: transparent; /* Fond transparent par défaut */
+    border: 2px solid #ccc; /* Bordure légèrement plus épaisse */
+    padding: 10px 20px; /* Taille des boutons légèrement agrandie */
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    font-size: 1.05rem; /* Taille de police légèrement augmentée */
+    border-radius: 25px; /* Bords très arrondis (forme de pilule) */
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #666; /* Couleur du texte par défaut */
+    min-width: 100px; /* Assure une largeur minimale pour les boutons */
+    text-align: center; /* Centre le texte dans le bouton */
+    /* display: inline-block; */ /* Pas toujours nécessaire avec flexbox parent, mais peut aider */
+    /* margin: 0 7.5px; */ /* Alternative au gap si nécessaire */
+}
+
+.filter-button:hover {
+    background-color: rgba(255, 0, 87, 0.1); /* Léger fond rose transparent au survol */
+    border-color: var(--primary-pink-color); /* ✅ BORDURE ROSE AU SURVOL */
+    color: var(--primary-pink-color); /* ✅ COULEUR ROSE AU SURVOL */
+}
+
+.filter-button.active {
+    background-color: var(--primary-pink-color); /* ✅ COULEUR DE FOND ROSE DU BOUTON ACTIF */
+    color: white; /* Couleur du texte blanc du bouton actif */
+    border-color: var(--primary-pink-color); /* ✅ COULEUR DE LA BORDURE ROSE DU BOUTON ACTIF */
+    font-weight: bold; /* Texte plus gras pour le bouton actif */
+}
+
+/* ----------------------------------- */
+/* --------- Project Styles --------- */
+/* ----------------------------------- */
+
+/* Tu as déjà des styles pour tes cartes de projet, assure-toi qu'ils sont ici */
+/* Par exemple: */
+/*
+.tmp-latest-portfolio .col-lg-6 {
+    margin-bottom: 30px;
+}
+.latest-portfolio-card {
+    ... tes styles ...
+}
+.portfoli-card-img {
+    ... tes styles ...
+}
+.img-box v2 img {
+    ... tes styles ...
+}
+.portfolio-card-content-wrap {
+    ... tes styles ...
+}
+.portfolio-card-title a {
+    ... tes styles ...
+}
+.portfoli-card-para {
+    ... tes styles ...
+}
+*/
+
+
+/* ----------------------------------- */
+/* --------- Blog Styles --------- */
+/* ----------------------------------- */
+
+.tmp-blog-area {
+    padding-top: var(--tmp-section-gap, 80px); /* Utilise la variable ou une valeur par défaut */
+    padding-bottom: var(--tmp-section-gap, 80px); /* Utilise la variable ou une valeur par défaut */
+}
+
+.tmp-blog-area .section-title h2 {
+    margin-bottom: 30px; /* Espacement sous le titre */
+}
+
+.tmp-blog-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.tmp-blog-card:hover {
+    transform: translateY(-5px); /* Effet au survol */
+}
+
+.tmp-blog-card .blog-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tmp-blog-card .blog-content {
+    padding: 20px;
+}
+
+.tmp-blog-card .blog-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.tmp-blog-card .blog-title a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.tmp-blog-card .blog-title a:hover {
+    color: var(--primary-pink-color); /* ✅ COULEUR ROSE AU SURVOL */
+}
+
+
+/* ----------------------------------- */
+/* --------- Other Global Styles --------- */
+/* ----------------------------------- */
+
+/* Ajoute ici les styles du reste du template d'origine pour assurer la cohérence */
+/* Par exemple, les styles pour l'en-tête, le footer, les sections générales, etc. */
+
+/* Exemple de style pour les titres h1, h2, etc. si tu veux une couleur rose */
+/* h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+h1.title {
+    color: var(--primary-pink-color);
+}
+*/
+
+/* Exemple de style pour les liens (si non définis ailleurs) */
+/* a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--primary-pink-color);
+}
+*/
+
+/* Assure-toi que les styles des utilitaires comme .tmp-section-gap existent dans tes styles globaux ou ici */
