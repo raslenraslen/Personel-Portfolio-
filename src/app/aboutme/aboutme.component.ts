@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent {
+  isSidebarOpen = false;
 
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
+
+  closeSidebar() {
+    this.isSidebarOpen = false;
+  }
 }
