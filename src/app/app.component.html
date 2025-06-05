@@ -1,4 +1,12 @@
-
+<app-header *ngIf="showHeader"></app-header>
 
 <router-outlet></router-outlet>
 
+
+<div class="ready-chatting-option tmp-ready-chat" *ngIf="showHeader">
+   ... (code du ready chatting) ...
+</div>
+
+<div class="scrollToTop" style="display: block;" *ngIf="showHeader">
+   ... (code du scroll to top) ...
+</div>

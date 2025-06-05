@@ -1,0 +1,119 @@
+<!-- tpm-header-area start -->
+<header class="tmp-header-area-start header-one header--sticky header--transparent">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="header-content">
+                    <div class="logo">
+                        <a routerLink="/home"> <!-- Utilise routerLink pour la navigation interne -->
+                            <img class="logo-dark" src="images/raslenlogowhite.png" alt="raslenlogo">
+                            <!-- Vérifie le chemin de cette image, il semble incorrect par rapport aux autres -->
+                            <img class="logo-white" src="assets/images/logo/logo-white.png" alt="Reeni - Personal Portfolio HTML Template for developers and freelancers">
+                        </a>
+                    </div>
+                    <nav class="tmp-mainmenu-nav d-none d-xl-block">
+                        <ul class="tmp-mainmenu">
+                            <li>
+                                <a routerLink="/home">Home
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/aboutme">About</a>
+                            </li>
+                            <li class="has-dropdown">
+                                <a routerLink="/services">Services
+                                    <i class="fa-regular fa-chevron-down"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a routerLink="/services">Service</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <!-- Utilise routerLink si tu as des routes Angular pour le blog -->
+                                <a href="#">Blog
+                                    <i class="fa-regular fa-chevron-down"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <!-- Utilise routerLink si tu as des routes Angular pour le blog -->
+                                    <li><a href="blog.html">Blog Classic</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown">
+                                <a routerLink="/projects">Project
+                                    <i class="fa-regular fa-chevron-down"></i>
+                                </a>
+                                <ul class="submenu">
+                                    <li><a routerLink="/projects">Project</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a routerLink="/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="tmp-header-right">
+                        <div class="social-share-wrapper d-none d-md-block">
+                            <div class="social-link">
+                                <a href="https://www.instagram.com/raslenmissaoui22/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/raslen.missaoui/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                        <div class="actions-area">
+                            <!-- Bouton d'ouverture pour desktop -->
+                            <div class="tmp-side-collups-area d-none d-xl-block">
+                                <button class="tmp-menu-bars tmp_button_active" (click)="openSideMenu()">
+                                    <i class="fa-regular fa-bars-staggered"></i>
+                                </button>
+                            </div>
+                            <!-- Bouton d'ouverture pour mobile -->
+                            <div class="tmp-side-collups-area d-block d-xl-none">
+                                <button class="tmp-menu-bars humberger_menu_active" (click)="openSideMenu()">
+                                    <i class="fa-regular fa-bars-staggered"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- tpm-header-area end -->
+
+<!-- Sidemenu Desktop Container -->
+<!-- On utilise la liaison de classe [class.is-open] pour contrôler l'affichage -->
+<div class="d-none d-xl-block" [class.is-open]="isSideMenuOpen">
+    <div class="tmp-sidebar-area tmp_side_bar">
+        <!-- Inclut le composant sidemenu ici -->
+        <app-side-menu></app-side-menu>
+    </div>
+    <!-- Overlay pour le sidemenu desktop (reste ici car géré par le HeaderComponent) -->
+    <a class="overlay_close_side_menu close_side_menu_active" href="javascript:void(0);" [class.is-open]="isSideMenuOpen" (click)="closeSideMenu()"></a>
+</div>
+
+<!-- Sidemenu Mobile Container -->
+<!-- On utilise la liaison de classe [class.is-open] pour contrôler l'affichage -->
+<div class="d-block d-xl-none" [class.is-open]="isSideMenuOpen">
+    <div class="tmp-popup-mobile-menu">
+        <!-- Inclut le composant sidemenu ici -->
+        <app-side-menu></app-side-menu>
+         <!-- Si le contenu mobile est très différent et justifie un composant séparé : -->
+         <!-- <app-side-menu-mobile></app-side-menu-mobile> -->
+    </div>
+    <!-- L'overlay mobile peut être le même que le desktop -->
+    <!-- Si tu as un overlay mobile séparé, son code serait ici et il aurait aussi [class.is-open] et (click) -->
+    <!-- <a class="overlay_close_side_menu close_side_menu_active" href="javascript:void(0);" [class.is-open]="isSideMenuOpen" (click)="closeSideMenu()" *ngIf="isMobileOverlay"></a> -->
+</div>
+
+<!-- Le reste des éléments (ready chatting, scroll to top) devraient être dans app.component.html -->
+<!-- ready chatting option via email -->
+<!-- <div class="ready-chatting-option tmp-ready-chat">
+    ...
+</div> -->
+
+<!-- progress area start -->
+<!-- <div class="scrollToTop" style="display: block;">
+    ...
+</div> -->

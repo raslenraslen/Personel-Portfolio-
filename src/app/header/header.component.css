@@ -1,0 +1,17 @@
+
+
+  /* Styles pour afficher le sidemenu desktop */
+.d-none.d-xl-block.is-open .tmp-sidebar-area {
+    transform: translateX(0); /* Fait glisser le sidemenu */
+  }
+  
+  /* Styles pour afficher le sidemenu mobile */
+  .d-block.d-xl-none.is-open .tmp-popup-mobile-menu {
+    transform: translateX(0); /* Fait glisser le sidemenu */
+  }
+  
+  /* Styles pour afficher l'overlay */
+  .overlay_close_side_menu.is-open {
+    opacity: 1;
+    visibility: visible; /* Le rend visible */
+  }

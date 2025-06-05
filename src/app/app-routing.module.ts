@@ -11,6 +11,8 @@ import { K8sdetailsComponent } from './k8sdetails/k8sdetails.component';
 import { EmployeedetailsComponent } from './employeedetails/employeedetails.component';
 import { PipelinedetailsComponent } from './pipelinedetails/pipelinedetails.component';
 import { BlooddetailsComponent } from './blooddetails/blooddetails.component';
+import { BlogComponent } from './blog/blog.component';
+import { CicddetailsComponent } from './cicddetails/cicddetails.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -22,8 +24,10 @@ const routes: Routes = [
   {path: 'k8sdetails' , component:K8sdetailsComponent} ,
   {path: 'employeedetails' , component:EmployeedetailsComponent} ,
   {path: 'blooddetails' , component:BlooddetailsComponent} ,
+  {path: 'blog' , component:BlogComponent} ,
   {path: 'pipelinedetails' , component:PipelinedetailsComponent} ,
-  {path: 'service' , component:ServiceComponent} ,
+  {path: 'cicddetails' , component:CicddetailsComponent} ,
+  {path: 'services' , component:ServiceComponent} ,
  
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   

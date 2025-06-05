@@ -1,0 +1,125 @@
+<!-- Contenu du sidemenu (pour les écrans larges - d-none d-xl-block) -->
+<!-- Tu peux garder les div wrapper internes si tes styles les ciblent -->
+<div class="inner">
+    <div class="top-area">
+        <!-- Logo (utilise routerLink) -->
+        <a routerLink="/home" class="logo">
+            <img class="logo-dark" src="images/raslenlogowhite.png" alt="Reeni Logo">
+            <img class="logo-white" src="assets/images/logo/logo-white.png" alt="Reeni Logo White">
+        </a>
+        <div class="close-icon-area">
+            <!-- Bouton de fermeture (appelle la méthode dans ce composant) -->
+            <button class="tmp-round-action-btn close_side_menu_active" (click)="closeSideMenu()">
+                <i class="fa-sharp fa-light fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <!-- Ton contenu spécifique du sidemenu desktop ici -->
+        <div class="image-area-feature">
+            <a routerLink="/home">
+                <img src="images/raslen5.jpg" style="width: 200px;" alt="personal-logo">
+            </a>
+        </div>
+        <h5 class="title mt--30">Cloud & DevOps Student Exploring Real-World Infrastructure and Automation</h5>
+        <p class="disc">I’m a dedicated Cloud & DevOps student passionate about building CI/CD pipelines, managing scalable cloud infrastructure, and automating system workflows. I focus on mastering tools like GitHub Actions, Jenkins, Docker, Kubernetes, and Terraform to deliver secure, efficient, and modern DevOps solutions.
+        </p>
+        <div class="short-contact-area">
+            <div class="single-contact">
+                <i class="fa-solid fa-phone"></i>
+                <div class="information tmp-link-animation">
+                    <span>Call Now</span>
+                    <a href="tel:+92880098670" class="number">+216 95 084 824</a>
+                </div>
+            </div>
+            <div class="single-contact">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="information tmp-link-animation">
+                    <span>Mail Us</span>
+                    <a href="mailto:example@info.com" class="number">raslen.missaoui@esprit.tn</a>
+                </div>
+            </div>
+            <div class="single-contact">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <div class="information tmp-link-animation">
+                    <span>My Address</span>
+                    <span class="number">Tunisia , Ben Arous 2063</span>
+                </div>
+            </div>
+        </div>
+        <div class="social-wrapper mt--20">
+            <span class="subtitle">find with me</span>
+            <div class="social-link">
+                <a href="https://www.instagram.com/raslenmissaoui22/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://www.facebook.com/raslen.missaoui/"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contenu du sidemenu (pour les écrans plus petits - d-block d-xl-none) -->
+<!-- J'assume que la structure interne et le contenu sont similaires, sinon il faudrait utiliser *ngIf ou un autre composant -->
+<div class="inner">
+    <div class="header-top">
+        <div class="logo">
+            <a routerLink="/home" class="logo-area">
+                <img class="logo-dark" src="assets/images/logo/white-logo-reeni.png" alt="Reeni Logo">
+                <img class="logo-white" src="assets/images/logo/logo-white.png" alt="Reeni Logo White">
+            </a>
+        </div>
+        <div class="close-menu">
+            <!-- Bouton de fermeture (appelle la méthode dans ce composant) -->
+            <button class="close-button tmp-round-action-btn" (click)="closeSideMenu()">
+                <i class="fa-sharp fa-light fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    <ul class="tmp-mainmenu">
+        <li>
+            <a routerLink="/home">Home</a>
+        </li>
+        <li>
+            <a routerLink="/aboutme">About</a>
+        </li>
+        <li class="has-dropdown">
+            <a routerLink="/services">Services
+                <i class="fa-regular fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+                <li><a routerLink="/services">Service</a></li>
+                <li><a routerLink="/services">Service Details</a></li>
+            </ul>
+        </li>
+        <li class="has-dropdown">
+            <a routerLink="/blog">Blog
+                <i class="fa-regular fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+                <li><a routerLink="/blog">Blog Classic</a></li>
+                <li><a routerLink="/blog">Blog Details</a></li>
+            </ul>
+        </li>
+        <li class="has-dropdown">
+            <a routerLink="/projects">Project
+                <i class="fa-regular fa-chevron-down"></i>
+            </a>
+            <ul class="submenu">
+                <li><a routerLink="/projects">Project</a></li>
+                <li><a routerLink="/projects">Project Details</a></li>
+            </ul>
+        </li>
+        <li>
+            <a routerLink="/contact">Contact</a>
+        </li>
+    </ul>
+    <div class="social-wrapper mt--40">
+        <span class="subtitle">find with me</span>
+        <div class="social-link">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </div>
+</div>
