@@ -14,6 +14,7 @@ import { BlooddetailsComponent } from './blooddetails/blooddetails.component';
 import { BlogComponent } from './blog/blog.component';
 import { CicddetailsComponent } from './cicddetails/cicddetails.component';
 
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   {path: 'detailsgamemax' , component:DetailsgamemaxComponent} , 
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'blog' , component:BlogComponent} ,
   {path: 'pipelinedetails' , component:PipelinedetailsComponent} ,
   {path: 'cicddetails' , component:CicddetailsComponent} ,
+ 
   {path: 'services' , component:ServiceComponent} ,
  
   { path: '', redirectTo: '/home', pathMatch: 'full' },
