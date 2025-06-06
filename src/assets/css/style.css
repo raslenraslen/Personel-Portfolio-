@@ -17115,7 +17115,7 @@ section.clients-testimonial-area {
 }
 .client-testimonial-swiper::before {
   content: " ";
-  background-image: url("../images/testimonial/left-bg-img.png");
+  
   background-repeat: no-repeat;
 }
 .client-testimonial-swiper .swiper {
